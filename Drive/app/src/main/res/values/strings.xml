@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Drive</string>
+    <string name="registro_de_drive">Registro de Usuarios</string>
+    <string name="ingrese_constrase_a">Ingrese Constraseña:</string>
+    <string name="ingrese_usuario">Ingrese Usuario:</string>
+    <string name="registrar_usuario">Registrar Usuario</string>
+</resources>

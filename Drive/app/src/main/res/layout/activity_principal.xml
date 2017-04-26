@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jorgeespina.drive.Principal">
+
+    <Button
+        android:id="@+id/CompartirArchivos"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/compartir"
+        android:text="Compartir Archivos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrearCarpeta"
+        app:layout_constraintVertical_bias="0.868" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="153dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/update"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreCarpeta"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <Button
+        android:id="@+id/EliminarCarpeta"
+        android:layout_width="130dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/eliminar"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreCarpeta"
+        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.822" />
+
+    <Button
+        android:id="@+id/DescargaArchivos"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/descarga"
+        android:text="Descarga de Archivos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrearCarpeta"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese Nombre de la Carpeta"
+        app:layout_constraintBottom_toTopOf="@+id/NombreCarpeta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.116" />
+
+    <EditText
+        android:id="@+id/NombreCarpeta"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <Button
+        android:id="@+id/CrearCarpeta"
+        android:layout_width="115dp"
+        android:layout_height="59dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/crear"
+        android:text="Crear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreCarpeta"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/carga"
+        android:text="Carga de Archivos"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CrearCarpeta"
+        app:layout_constraintVertical_bias="0.304" />
+
+</android.support.constraint.ConstraintLayout>
