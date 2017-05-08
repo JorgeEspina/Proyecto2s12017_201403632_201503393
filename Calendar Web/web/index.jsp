@@ -38,7 +38,7 @@
 
         <!--header-->
         <div class="header-w3l">
-            <h1>Calendar Web </h1>
+            <h1>Calendar </h1>
         </div>
         <!--//header-->
 
@@ -51,9 +51,7 @@
                 </div>
                 <form method="POST">
                     <input placeholder="Usuario" name="Name" class="user" type="text" required="" > 
-                    <input  placeholder="Password" name="Password" class="pass" type="password" required="">
-                    <input placeholder="Empresa" name="empresa" class="emp" type="text" required="">
-                    <input placeholder="Departamento" name="departamento" class="dep" type="text" required="">
+                    <input  placeholder="Password" name="Password" class="pass" type="password" required="">                  
                     <div class="sub-w3l">
                         <div class="right-w3l">
                             <input type="submit" value="Login">
@@ -63,24 +61,20 @@
 
                                         d.setUsuario(request.getParameter("Name"));
                                         d.setContraseña(request.getParameter("Password"));
-                                        d.setEmpresa(request.getParameter("empresa"));
-                                        d.setDepartamento(request.getParameter("departamento"));
+                                      
                                         String Usu = d.getUsuario();
                                         String Con = d.getContraseña();
-                                        String Empre = d.getEmpresa();
-                                        String Dep = d.getDepartamento();
-
-                                        if (d.Login(Usu, Con, Empre, Dep) == true) {
-                                            response.sendRedirect("Principal.jsp");
-                                            out.println("<br>Tu Usuario es: " + d.getUsuario());
-                                            out.println("<br>Tu Contraseña es: " + d.getContraseña());
-                                            out.println("<br>Tu Empresa es: " + d.getEmpresa());
-                                            out.println("<br>Tu Departamento es: " + d.getDepartamento());
-                                        } else {
-                                            String popupScript = "<script language='JavaScript'> alert('Usuario o Contraseña Invalidos!'); </script>";
-                                          //  index.RegisterStartupScript("PopupScript", popupScript);
-                                            out.println("<br> ERROR");
-                                        }
+                                      
+                                        // llamo al metodo de login para logiar
+                                        //if (d.Login(Usu, Con, Empre, Dep) == true) {
+                                             response.sendRedirect("Principal.jsp");
+                                             out.println("<br>Tu Usuario es: " + d.getUsuario());
+                                             out.println("<br>Tu Contraseña es: " + d.getContraseña());                                          
+                                             /*} else {
+                                             String popupScript = "<script language='JavaScript'> alert('Usuario o Contraseña Invalidos!'); </script>";
+                                             //  index.RegisterStartupScript("PopupScript", popupScript);
+                                             out.println("<br> ERROR");
+                                             }*/
 
                                     }
                                 } catch (Exception ex) {
@@ -96,3 +90,4 @@
             </div>
         </div>
     </body>
+</html>
